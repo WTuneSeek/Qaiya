@@ -10,6 +10,9 @@ public class FieldOfView : MonoBehaviour
     [Range(1, 360)]
     public float angle = 45f;
 
+    public float speed;
+    private float distance;
+
     private GameObject playerRef;
 
     public LayerMask targetMask;
@@ -21,6 +24,18 @@ public class FieldOfView : MonoBehaviour
     {
         playerRef = GameObject.FindGameObjectWithTag("Player");
         StartCoroutine(FOVRoutine());
+    }
+
+    private void Update()
+    {
+        if (CanSeePlayer)
+        {
+            distance = Vector2.Distance(transform.position, playerRef.transform.position);
+            Vector2 direction = playerRef.transform.position - transform.position;
+
+            transform.position = Vector2.MoveTowards(this.transform.position, playerRef.transform.position,
+                speed * Time.deltaTime);
+        }
     }
 
     private IEnumerator FOVRoutine()

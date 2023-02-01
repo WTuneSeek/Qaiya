@@ -255,6 +255,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RobotController (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6585251038304854061, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6585251038304854063, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -809,9 +813,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1521280744}
   - component: {fileID: 1521280746}
-  - component: {fileID: 1521280745}
   - component: {fileID: 1521280748}
+  - component: {fileID: 1521280745}
   - component: {fileID: 1521280749}
+  - component: {fileID: 1521280750}
   m_Layer: 6
   m_Name: PlayerController
   m_TagString: Player
@@ -868,7 +873,7 @@ Rigidbody2D:
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!58 &1521280748
@@ -897,6 +902,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 01862804b5c598a44a8c778a0c27ec95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1521280750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521280743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1843e16afc6d69f43bf039621eebafcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1677719333
