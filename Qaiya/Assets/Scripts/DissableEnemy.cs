@@ -7,7 +7,12 @@ public class DissableEnemy : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D col)
     {
-        Destroy (gameObject.tag("Enemy"));
+        Debug.Log("No works");
+        if (col.CompareTag("Enemy"))
+        {
+            Debug.Log("Works");
+            Destroy(col.transform.parent.gameObject);
+        }
     }
 
 }

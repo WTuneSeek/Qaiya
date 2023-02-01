@@ -130,6 +130,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6487298915222426365, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6487298916833072062, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6487298916928819061, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -187,6 +195,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6487298915222426365, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6487298916833072062, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 6487298916928819061, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -407,6 +423,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &315428991 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6487298916833072062, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
+  m_PrefabInstance: {fileID: 1512019854}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &315428994
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315428991}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &328778130
 GameObject:
   m_ObjectHideFlags: 0
@@ -491,6 +528,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &551661149 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6487298916833072062, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
+  m_PrefabInstance: {fileID: 146943723}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &551661152
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551661149}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &1282691524
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,6 +654,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6487298915222426365, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6487298916833072062, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6487298916928819061, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -829,6 +895,48 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1708471769 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6487298916833072062, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
+  m_PrefabInstance: {fileID: 188830012}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &1708471772
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708471769}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!1 &1984841854 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6487298916833072062, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
+  m_PrefabInstance: {fileID: 6487298916264021839}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &1984841857
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984841854}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &1998310305
 GameObject:
   m_ObjectHideFlags: 0
@@ -868,6 +976,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6487298915222426365, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6487298916833072062, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6487298916928819061, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
       propertyPath: m_RootOrder
       value: 4
