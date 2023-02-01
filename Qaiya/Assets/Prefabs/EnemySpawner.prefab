@@ -224,7 +224,7 @@ MonoBehaviour:
   maxEnemies: 5
   currentEnemies: 0
   delayTime: 2
-  enemy: {fileID: 6487298916928819063, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
+  enemy: {fileID: 6585251038304854066, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
   detectionRadius: 5
   spawnRadius: 4
   timerActive: 0

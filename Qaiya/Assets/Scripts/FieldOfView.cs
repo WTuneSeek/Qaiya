@@ -14,6 +14,7 @@ public class FieldOfView : MonoBehaviour
     private float distance;
 
     private GameObject playerRef;
+    private Transform p_transform;
 
     public LayerMask targetMask;
     public LayerMask obstructionMask;
@@ -35,6 +36,11 @@ public class FieldOfView : MonoBehaviour
 
             transform.position = Vector2.MoveTowards(this.transform.position, playerRef.transform.position,
                 speed * Time.deltaTime);
+            
+            Vector2 lookDirection = transform.position - playerRef.transform.position;
+            float angle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
+            Quaternion rotation = Quaternion.AngleAxis(angle + 90, Vector3.forward);
+            transform.rotation = rotation;
         }
     }
 
