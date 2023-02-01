@@ -186,6 +186,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RobotController (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6585251038304854063, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
 --- !u!1001 &188830012
@@ -250,6 +254,18 @@ PrefabInstance:
     - target: {fileID: 6487298916928819063, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
       propertyPath: m_Name
       value: RobotController (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6585251038304854063, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6585251038304854063, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6585251038304854063, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
@@ -691,7 +707,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1282691528
 MonoBehaviour:
@@ -769,6 +785,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: RobotController (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6585251038304854063, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6585251038304854063, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 6585251038304854063, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.27
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
 --- !u!1 &1521280743
@@ -782,11 +810,11 @@ GameObject:
   - component: {fileID: 1521280744}
   - component: {fileID: 1521280746}
   - component: {fileID: 1521280745}
-  - component: {fileID: 1521280747}
   - component: {fileID: 1521280748}
-  m_Layer: 0
+  - component: {fileID: 1521280749}
+  m_Layer: 6
   m_Name: PlayerController
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -843,18 +871,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1521280747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1521280743}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a78a4af87bdd66449034602900cafdc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!58 &1521280748
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -871,6 +887,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.0013652742}
   serializedVersion: 2
   m_Radius: 0.27974585
+--- !u!114 &1521280749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521280743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01862804b5c598a44a8c778a0c27ec95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1677719333
 GameObject:
   m_ObjectHideFlags: 0
@@ -1256,6 +1284,14 @@ PrefabInstance:
     - target: {fileID: 6487298916928819063, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
       propertyPath: m_TagString
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6585251038304854063, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 6585251038304854063, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.62
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed55d0656781ba54b98f10313ccb886d, type: 3}

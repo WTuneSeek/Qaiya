@@ -10,7 +10,7 @@ public class FieldOfView : MonoBehaviour
     [Range(1, 360)]
     public float angle = 45f;
 
-    public GameObject playerRef;
+    private GameObject playerRef;
 
     public LayerMask targetMask;
     public LayerMask obstructionMask;
