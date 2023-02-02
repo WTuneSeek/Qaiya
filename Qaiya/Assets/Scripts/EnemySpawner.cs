@@ -72,7 +72,12 @@ public class EnemySpawner : MonoBehaviour
         Vector2 randomSpawnPoint = centerpoint + Random.insideUnitCircle * spawnRadius * 0.5f;
         // Debug.Log(randomSpawnPoint);
 
-        GameObject currentEnemy = Instantiate(enemy, randomSpawnPoint, quaternion.identity);
+        Vector3 test = new Vector3(0f, 0f, 0f);
+        test.z = Random.value * 360;
+        quaternion randomRotation = quaternion.Euler(test);
+        
+        GameObject currentEnemy = Instantiate(enemy, randomSpawnPoint, randomRotation);
+        currentEnemy.name = "RobotController" + currentEnemies;
         enemies.Add(currentEnemy);
         currentEnemies += 1;
         timer = delayTime;

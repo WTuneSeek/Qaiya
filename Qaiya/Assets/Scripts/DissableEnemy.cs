@@ -23,11 +23,11 @@ public class DissableEnemy : MonoBehaviour
             interactionMenu.text = "Press 'E' to disable enemy";
             if (Input.GetKeyDown(KeyCode.E))
             {
-                // Debug.Log("Works");
                 Destroy(col.transform.parent.gameObject);
             }
         }
     }
+    
 
     private void OnTriggerExit2D(Collider2D other)
     {

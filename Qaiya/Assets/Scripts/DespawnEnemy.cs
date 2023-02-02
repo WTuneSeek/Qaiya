@@ -29,11 +29,17 @@ public class DespawnEnemy : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        foreach (var enemy in enemiesList)
+        if (other.CompareTag("Player"))
         {
-            Destroy(enemy);
+            foreach (var enemy in enemiesList)
+            {
+                Destroy(enemy);
+            }
+        despawned = true;
         }
 
-        despawned = true;
     }
+    
+    
+    
 }
